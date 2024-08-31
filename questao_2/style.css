@@ -1,0 +1,43 @@
+* {
+
+    background-color: #e696df;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    width: 20vw;
+    background-color: #ff00c3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: #9100eb;
+}
+
+
+section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section input[type="text"] {
+    display: inline-block;
+    width: 45%;
+    margin: 5%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

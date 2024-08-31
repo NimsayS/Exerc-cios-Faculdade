@@ -1,0 +1,32 @@
+header {
+    background-color: #8b20d8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+main p {
+    display: inline;
+    background-color: #d287af;
+    color: #333;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+footer {
+    background-color: #a854b7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
