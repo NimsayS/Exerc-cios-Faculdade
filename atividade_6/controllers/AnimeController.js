@@ -42,7 +42,7 @@ class AnimeController {
     deleteAnime(req, res) {
       try {
         this.animeService.deleteAnime(req.params.id);
-        res.status(204).send();
+        res.status(200).send();
       } catch (error) {
         res.status(404).json({ error: error.message });
       }
