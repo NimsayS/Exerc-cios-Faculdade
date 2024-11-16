@@ -17,7 +17,7 @@ app.post("/animes", (req, res) => {
   const { name, genre, studio } = req.body;
 
   if (!name || !genre || !studio) {
-    return res.status(400).json({ error: "Os campos são obrigatórios" });
+    return res.status(400).json({ error: "Os campos sao obrigatorios" });
   }
 
   const newAnime = {
@@ -40,7 +40,7 @@ app.post("/animes", (req, res) => {
     const anime = animes.find((a) => a.id === id); 
   
     if (!anime) {
-      return res.status(404).json({ error: "anime não encontrado" });
+      return res.status(404).json({ error: "anime nao encontrado" });
     }
   
     res.json(anime);
@@ -53,12 +53,12 @@ app.post("/animes", (req, res) => {
     const anime = animes.find((a) => a.id === id); 
   
     if (!anime) {
-      return res.status(404).json({ error: "anime não encontrado" });
+      return res.status(404).json({ error: "anime nao encontrado" });
     }
   
 
     if (!name || !genre || !studio) {
-      return res.status(400).json({ error: "Os campos são obrigatórios" });
+      return res.status(400).json({ error: "Os campos são obrigatorios" });
     }
   
 
@@ -74,7 +74,7 @@ app.post("/animes", (req, res) => {
     const index = animes.find((a) => a.id === id); 
   
     if (index === -1) {
-      return res.status(404).json({ error: "anime não encontrado" });
+      return res.status(404).json({ error: "anime nao encontrado" });
     }
   
     animes.splice(index, 1);
