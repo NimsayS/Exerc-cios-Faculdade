@@ -3,15 +3,28 @@ const app = express();
 
 
 app.use(express.json());
+const { v4: uuidv4 } = require("uuid");
 
-
-let animes = [];
+let animes = [
+  {
+    id: uuidv4(),
+    name: "One Piece",
+    genre: "Action",
+    studio: "Toei Animation",
+  },
+  {
+    id: uuidv4(),
+    name: "Naruto",
+    genre: "Adventure",
+    studio: "Pierrot",
+  },
+];
 
 
 
 module.exports = app;
 
-const { v4: uuidv4 } = require("uuid");
+
 
 app.post("/animes", (req, res) => {
   const { name, genre, studio } = req.body;
